@@ -1,122 +1,105 @@
 @font-face {
-    font-family: "ClashDisplay";
+    font-family: "Clash Display";
     src: url(../fonts/ClashDisplay-Light.woff2);
     font-weight: 200;
-}
-
-@font-face {
-    font-family: "ClashDisplay";
+ }
+ @font-face {
+    font-family: "Clash Display";
     src: url(../fonts/ClashDisplay-Regular.woff2);
     font-weight: 400;
-}
-
-@font-face {
-    font-family: "ClashDisplay";
+ }
+ @font-face {
+    font-family: "Clash Display";
     src: url(../fonts/ClashDisplay-Semibold.woff2);
     font-weight: 600;
-}
-
-@font-face {
-    font-family: "ClashDisplay";
+ }
+ @font-face {
+    font-family: "Clash Display";
     src: url(../fonts/ClashDisplay-Bold.woff2);
     font-weight: 900;
-}
-
-@font-face {
-    font-family: "Satoshi";
+ }
+ @font-face {
+    font-family: Satoshi;
     src: url(../fonts/Satoshi-Regular.woff2);
     font-weight: 400;
-}
-
-* {
+ }
+ *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-:root {
+ }
+ :root {
     --color-white: #ffffff;
     --color-black: #000000;
-    --color-lite-gray: #f9f9f9;
-    --color-dark-primary: #2a254b;
-    --color-nav-links: #726e8d;
-}
-
-.btn {
+    --color-lite-gray: #F9F9F9;
+    --color-dark-primary: #2A254B;
+    --color-nav-links: #726E8D;
+ }
+ .btn{
     text-decoration: none;
     color: var(--color-dark-primary);
     background-color: var(--color-lite-gray);
     padding: 16px 32px;
     font-family: Satoshi;
     font-size: 16px;
-}
-
-.btn:hover {
+ }
+ .btn:hover{
     transition: all 0.8s;
     color: var(--color-lite-gray);
     background-color: var(--color-dark-primary);
-}
-
-h2 {
-    font-family: "ClashDisplay";
+ }
+ 
+ h2{
+    font-family: "Clash Display";
     font-weight: normal;
     font-size: 30px;
-}
-
-header {
+ }
+ 
+ header {
     display: grid;
     row-gap: 20px;
-    padding: 20px 2vh;
-}
-
-header>div {
+    padding: 20px 2vw;
+ }
+ header>div{
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3,1fr);
     align-items: center;
-}
-
-header>div span {
+ }
+ header>div span{
+    font-family: "Clash Display";
     justify-self: center;
-    font-family: ClashDisplay;
     font-size: 24px;
-}
-
-header>div div.icons {
+ }
+ header>div div.icons{
     justify-self: end;
     display: grid;
+    grid-template-columns: repeat(2,1fr);
     column-gap: 1vw;
-    grid-template-columns: repeat(2, 1fr);
-}
-
-header>div svg{
+ }
+ header>div svg{
     height: 16px;
     color: var(--color-dark-primary);
-}
-
-header nav {
+ }
+ header nav{
     justify-self: center;
-}
-
-header nav ul {
+ }
+ header nav ul{
     list-style-type: none;
     display: flex;
     column-gap: 4vw;
-}
-
-header nav ul a {
+ }
+ header nav ul a{
     text-decoration: none;
     color: var(--color-nav-links);
     font-family: Satoshi;
     font-size: 16px;
-}
-
-header nav ul a:hover {
-    color: var(--color-dark-primary);
+ }
+ header nav ul a:hover{
+    color: var(--color-black);
     transition: all 0.7s;
-}
-
-main section.header {
-    background-image: url(../image/sectionheader.jpg);
+ }
+ main section.header{
+    background-image: url(../images/sectionHeader.jpg);
     height: 42vw;
     background-size: cover;
     background-repeat: no-repeat;
@@ -125,9 +108,8 @@ main section.header {
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
     padding-right: 8vw;
-}
-
-main section.header div {
+ }
+ main section.header div{
     display: grid;
     row-gap: 20px;
     background-color: var(--color-white);
@@ -135,117 +117,97 @@ main section.header div {
     grid-template-rows: max-content;
     height: 64%;
     padding: 5vw;
-    align-items: center;
-}
-
-main section.header div h1 {
-    font-family: "ClashDisplay";
+ }
+ main section.header div h1{
+    font-family: "Clash Display";
     font-size: 32px;
     font-weight: 400;
-}
-
-main section.header div span {
-    font-family: "Satoshi";
+ }
+ main section.header div span{
+    font-family: Satoshi;
     font-size: 18px;
-    color: var(--color-nav-links);
-}
-
-main section.header div a {
+ }
+ main section.header div a{
     align-self: end;
     justify-self: start;
-
-}
-
-main section.our-brand {
+ }
+ main section.our-brand{
     padding: 80px 6vw;
     display: grid;
     row-gap: 36px;
-}
-
-main section.our-brand h2 {
-    font-family: "ClashDisplay";
+    padding-bottom: 40px;
+ }
+ main section.our-brand h2{
+    font-family: "Clash Display";
     font-size: 28px;
     text-align: center;
     font-weight: 400;
-}
-
-main section.our-brand div {
+ }
+ main section.our-brand div{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     column-gap: 2vw;
-}
-
-main section.our-brand div article {
+ }
+ main section.our-brand div article{
     display: grid;
     grid-template-rows: 24px repeat(2, 1fr);
     row-gap: 12px;
     padding: 48px;
     background-color: var(--color-lite-gray);
-    color: var(--color-dark-primary);
-}
-
-main section.our-brand div article svg {
+ }
+ main section.our-brand div article svg{
     height: 100%;
-}
-
-main section.our-brand div article h3 {
-    font-family: "ClashDisplay";
+ }
+ main section.our-brand div article h3{
+    font-family: "Clash Display";
     font-size: 20px;
     font-weight: 400;
-}
-
-main section.our-brand div article p {
+ }
+ main section.our-brand div article p{
     font-family: Satoshi;
-}
-
-main section.new-tovar {
+ }
+ main section.new-tovar {
     padding: 80px 6vw;
     display: grid;
     row-gap: 36px;
-    padding-bottom: 40px;
-}
-
-main section.new-tovar div {
+    padding-top: 40px;
+ }
+ main section.new-tovar div{
     display: grid;
     column-gap: 2vw;
     grid-template-columns: repeat(4, 1fr);
-}
-
-main section.new-tovar article {
+ }
+ main section.new-tovar div article{
     display: grid;
     grid-template-rows: 305px 1fr;
     row-gap: 24px;
-}
-
-main section.new-tovar div img {
+ }
+ main section.new-tovar div article:hover{
+    transform: scale(1.05);
+    transition: all 0.8s;
+ }
+ main section.new-tovar div img{
     width: 100%;
     height: 100%;
     object-fit: cover;
-}
-
-main section.new-tovar article:hover {
-    transform: scale(1.05);
-    transition: all 0.8s;
-}
-
-main section.new-tovar div p {
-    font-family: "ClashDisplay";
+ }
+ main section.new-tovar div p {
+    font-family: "Clash Display";
     font-size: 20px;
     font-weight: 400;
     display: flex;
     flex-direction: column;
     row-gap: 8px;
-}
-
-main section.new-tovar div p span {
+ }
+ main section.new-tovar div p span{
     font-family: Satoshi;
-}
-
-main section.new-tovar a {
+ }
+ 
+ main section.new-tovar a{
     justify-self: center;
-}
+ }
 
-main section.started {
+ main section.started {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 36vw;
@@ -377,17 +339,18 @@ footer header form div {
     display: grid;
     grid-template-rows: 56px;
     grid-template-columns: 4fr 1fr;
+    padding-top: 16px;
 }
 
-footer header form  div input{
+footer header form  div input {
+    background-color: var(--color-nav-links);
+    color: var(--color-white);
     border: none;
     border-radius: 0;
     padding-left: 3vw;
-    background-color: var(--color-nav-links);
 }
 
 footer header form  div input[type=submit] {
-    color: var(--color-white);
     background-color: var(--color-white);
     color: var(--color-dark-primary);
     padding: 0 32px;
@@ -422,4 +385,3 @@ footer footer ul svg {
 footer hr {
     border-color: #4E4D93;
 }
-
